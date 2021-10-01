@@ -21,12 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
       "Accept":"application/json",
     }
   }
+  function refreshPage(){
+    
+    document.getElementById('toy-collection').innerHTML = "";
+    // document.getElementsByClassName('input-text')[0].inp;
   fetch('http://localhost:3000/toys', configGET)
   .then(function(response){
     return response.json()
   })
   .then(data=>{data.forEach(image=>renderImages(image))})
-
+  }
   //add new toy to site
 
 const addToys = document.querySelector('.submit');
@@ -46,11 +50,17 @@ addToys.addEventListener('click', (event)=>{
       likes:0
     })
   });
+  name.innerText = "";
+  image.innerText = "";
+  name.value="";
+  image.value = "";
+  refreshPage();
 });
 
 
 //create info holders
 function renderImages(data){
+  
   //create toy containers
   const container = document.getElementById('toy-collection');
   const div = document.createElement('div');
@@ -92,12 +102,14 @@ function renderImages(data){
       },
       body:JSON.stringify(data)
     })
+    refreshPage();
+    //document.getElementClassName('input-text').reset();
   })
 
 }
+refreshPage();
 
 
-
-
+document.getElementById('form').reset();
 }
 )
