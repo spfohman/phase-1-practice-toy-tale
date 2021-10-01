@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 12
     },
     {
       "id": 2,
@@ -47,6 +47,57 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": 1
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "name": "Sarah Pfohman",
+      "image": "www.hello.com",
+      "likes": 0,
+      "id": 18
+    },
+    {
+      "name": "Sarah Pfohman",
+      "image": "www.hello.com",
+      "likes": 0,
+      "id": 19
+    },
+    {
+      "name": "Sarah Pfohman",
+      "image": "www.hello.com",
+      "likes": 0,
+      "id": 20
+    },
+    {
+      "name": "Sarah",
+      "image": "www.hotmail.com",
+      "likes": 0,
+      "id": 21
     }
   ]
 }
